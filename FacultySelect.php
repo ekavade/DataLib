@@ -41,22 +41,15 @@ include("dbConfig.php");
 				</ul>
 				</div>
 
-
-
         <!-- Dashboard-->
-				<div class="row">
- 			 <div class="container jumbotron col-xs-6 col-md-4 ">
-
- 			 <form class="form-signin">
- 				 <h2 class="form-signin-heading">Faculty sign in</h2>
- 				 <label for="inputEmail" class="sr-only">Email address</label>
- 				 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
- 				 <label for="inputPassword" class="sr-only">Password</label>
- 				 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
- 				 <button class="btn btn-lg btn-primary btn-block" type="submit" href="FacultyHome.php">Sign in</button>
- 			 </form>
+		<div class="row">
+ 			<div class="container jumbotron col-xs-6 col-md-4 ">       
+            <h2>Select Library to Visit</h2>
+            <a href="#" class="btn btn-info" role="button">General Library</a>
+            <a href="#" class="btn btn-info" role="button">Computer Library</a>
+            </div>
  		 </div>
- 		 </div>
+        
         <!-- Footer -->
         <div class="container jumbotron bg-primary">
 

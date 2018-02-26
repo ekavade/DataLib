@@ -44,16 +44,34 @@ include("dbConfig.php");
 
 				<div class="row">
 				<div class="container jumbotron col-xs-6 col-md-4 ">
-                    <form class="form-signin">
-        	           <h2 class="form-signin-heading">Student sign in</h2>
-        	           <label for="inputEmail" class="sr-only">Email address</label>
-        	           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        	           <label for="inputPassword" class="sr-only">Password</label>
-        	           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        	           <button class="btn btn-lg btn-primary btn-block" type="submit" href="StudentHome.php">Sign in</button>
-      	             </form>
+                    <p> Check if the Employee ID are correct </p>
+                    
+                    <div class="container">
+                        <div class="row">
+                        <div class="page-header">
+                        <h1>Confirm Employee ID. </h1>
+                        </div>
+                        <form class="form-horizontal" role="form" method="post" action="#">
+
+                        <div class="form-group">
+                        <label class=" control-label">Employee ID:</label>
+                        
+                        <input type="text" name="Eid" class="form-control" id="Eid" placeholder="Employee ID.">
+                        </div>
+
+                        <div class="form-group">
+                        <div class="">
+                        <button type="submit" class="btn btn-primary" id="register">Confirm</button>
+                        </div>
+                        </div>
+
+                        </form>
+
+                        </div><!-- end for class "row" -->
+                        </div><!-- end for class "container" -->
 			     </div>
 			     </div>
+        
 	        <!-- Footer -->
 	        <div class="container jumbotron bg-primary">
 

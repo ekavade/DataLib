@@ -42,19 +42,9 @@ include("dbConfig.php");
 
         <!-- Dashboard-->
 
-				<div class="row">
-				<div class="container jumbotron col-xs-6 col-md-4 ">
-
-      	<form class="form-signin">
-        	<h2 class="form-signin-heading">Student sign in</h2>
-        	<label for="inputEmail" class="sr-only">Email address</label>
-        	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        	<label for="inputPassword" class="sr-only">Password</label>
-        	<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      	</form>
-			</div>
-			</div>
+        <div class="jumbotron container"> 
+            <p> Student Homepage Section </p>
+        </div>
 	        <!-- Footer -->
 	        <div class="container jumbotron bg-primary">
 
