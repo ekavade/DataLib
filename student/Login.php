@@ -25,25 +25,35 @@ include("dbConfig.php");
         <div class="container">
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link " href="index.php">Home </a>
+                <a class="nav-link " href="../index.php">Home </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="StudentLogin.php">Student Login</a>
+                <a class="nav-link active" href="../Student/Login.php">Student Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="FacultyLogin.php">Faculty Login</a>
+                <a class="nav-link " href="../Faculty/Login.php">Faculty Login</a>
                   </li>
                 <li class="nav-item">
-                <a class="nav-link " href="AdminLogin.php">Admin Login</a>
+                <a class="nav-link " href="../Admin/Login.php">Admin Login</a>
             </li>
 
         </ul>
         </div>
 
         <!-- Dashboard-->
-        <div class="jumbotron container"> 
-            <p> Faculty Homepage Section </p>
-        </div>
+
+				<div class="row">
+				<div class="container jumbotron col-xs-6 col-md-4 ">
+                    <form class="form-signin">
+        	           <h2 class="form-signin-heading">Student sign in</h2>
+        	           <label for="inputEmail" class="sr-only">Email address</label>
+        	           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        	           <label for="inputPassword" class="sr-only">Password</label>
+        	           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        	           <button class="btn btn-lg btn-primary btn-block" type="submit" href="StudentHome.php">Sign in</button>
+      	             </form>
+			     </div>
+			     </div>
 	        <!-- Footer -->
 	        <div class="container jumbotron bg-primary">
 

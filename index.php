@@ -28,13 +28,13 @@ include("dbConfig.php");
                 <a class="nav-link active" href="index.php">Home </a>
             </li>   
             <li class="nav-item">    
-                <a class="nav-link" href="StudentLogin.php">Student Login</a>  
+                <a class="nav-link" href="Student/Login.php">Student Login</a>  
             </li>  
             <li class="nav-item">    
-                <a class="nav-link " href="FacultyLogin.php">Faculty Login</a>  
+                <a class="nav-link " href="Faculty/Login.php">Faculty Login</a>  
             </li>    
             <li class="nav-item">    
-                <a class="nav-link " href="AdminLogin.php">Admin Login</a>  
+                <a class="nav-link " href="Admin/Login.php">Admin Login</a>  
             </li>
             
         </ul>
