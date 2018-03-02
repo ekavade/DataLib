@@ -1,6 +1,9 @@
 <?php
 include("dbConfig.php");
+session_start();
 //PHP code to output the Dashboard Values
+$email=$_SESSION["email"];
+$name=$_SESSION["name"];
 ?>
 
 <!DOCTYPE html>
@@ -28,8 +31,8 @@ include("dbConfig.php");
         </div>
         
         <div class="container bg-dark text-light">
-          <h1>Welcome Student</h1>
-            <button type="button" class="btn btn-danger float-md-right">Logout</button>
+          <h1>Welcome <?php echo $name; ?> </h1>
+            <form action="logout.php" method="post"><button type="submit" class="btn btn-danger float-md-right" onclick="logout.php">Logout</button> </form>
           <div class="row">
             <div class="col-sm-2" style="background-color:yellow;">
               

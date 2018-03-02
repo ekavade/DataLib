@@ -54,6 +54,7 @@ error_reporting(0);
         	           <label for="pass" class="sr-only">Password</label>
         	           <input type="password" id="pass" class="form-control" name="pass" placeholder="Password" required>
         	           <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+                        <label><a href="Confirm.php"> New User? Register here </a></label>
       	             </form>
                     
 			     </div>

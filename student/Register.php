@@ -1,6 +1,22 @@
 <?php
 include("dbConfig.php");
 //PHP code to output the Dashboard Values
+session_start();
+
+$uno=;$_POST['Uno']
+$rno=$_POST['Rno'];
+
+    mysql_connect($serverName, $userName, $password) or die(mysql_error());
+	mysql_select_db($databaseName) or die(mysql_error());
+
+    $result = mysql_query("SELECT * FROM student WHERE unumber = '$uno' AND rollno = '$rno' " );
+    $row = mysql_fetch_assoc($result);
+    if(row['fullname']==NULL && row['phone']==NULL)
+        {
+            echo '<script type="text/javascript">','alert("Registration Failed !!!");','</script>';
+            header('location: confirm.php');
+        }
+    
 ?>
 
 <!DOCTYPE html>
@@ -50,11 +66,11 @@ include("dbConfig.php");
                         <div class="page-header">
                         <h1>Registration Form </h1>
                         </div>
-                        <form class="form-horizontal" role="form" method="post" action="#">
+                        <form class="form-horizontal" role="form" method="post" action="register2.php">
 
                             <div class="form-group">
                             <label for="fullName" class="control-label">Full Name:</label>
-                            <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Full Name">
+                            <input type="text" name="fullname" class="form-control" id="fullName" placeholder="Full Name">
                             </div>
 
 
@@ -65,7 +81,7 @@ include("dbConfig.php");
                             
                             <div class="form-group">
                             <label for="phone" class=" control-label">Dept (Dropdown):</label>
-                             <select>
+                             <select name="dept">
                               <option value="comp">Computer</option>
                               <option value="it">IT</option>
                               <option value="etc">ETC</option>

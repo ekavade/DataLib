@@ -1,6 +1,7 @@
 <?php
 include("dbConfig.php");
-//PHP code to output the Dashboard Values
+//PHP code to output the Dashboard Values\
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +52,7 @@ include("dbConfig.php");
                         <div class="page-header">
                         <h1>Confirm University and Roll No. </h1>
                         </div>
-                        <form class="form-horizontal" role="form" method="post" action="#">
+                        <form class="form-horizontal" role="form" method="post" action="register.php">
 
                         <div class="form-group">
                         <label class=" control-label">University No:</label>
