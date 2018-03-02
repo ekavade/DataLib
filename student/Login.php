@@ -1,5 +1,7 @@
 <?php
 include("dbConfig.php");
+session_start();
+error_reporting(0);
 //PHP code to output the Dashboard Values
 ?>
 
@@ -44,14 +46,16 @@ include("dbConfig.php");
 
 				<div class="row">
 				<div class="container jumbotron col-xs-6 col-md-4 ">
-                    <form class="form-signin">
+                    
+                    <form class="form-signin" method="post" action="validatelogin.php">
         	           <h2 class="form-signin-heading">Student sign in</h2>
-        	           <label for="inputEmail" class="sr-only">Email address</label>
-        	           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        	           <label for="inputPassword" class="sr-only">Password</label>
-        	           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        	           <button class="btn btn-lg btn-primary btn-block" type="submit" href="StudentHome.php">Sign in</button>
+        	           <label for="email" class="sr-only">Email address</label>
+        	           <input type="email" id="email" class="form-control" name = "email" placeholder="Email address" required autofocus>
+        	           <label for="pass" class="sr-only">Password</label>
+        	           <input type="password" id="pass" class="form-control" name="pass" placeholder="Password" required>
+        	           <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
       	             </form>
+                    
 			     </div>
 			     </div>
 	        <!-- Footer -->

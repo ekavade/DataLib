@@ -37,7 +37,7 @@ include("dbConfig.php");
               
                 <ul class="nav nav-pills">
                   <li class="nav-item">
-                    <a class="nav-link active" href="Home.php">Dashboard</a>
+                    <a class="nav-link " href="Home.php">Dashboard</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="addbook.php">Add/Edit Book</a>
@@ -55,7 +55,7 @@ include("dbConfig.php");
                     <a class="nav-link" href="report.php">Show Monthly Report</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="editdetails.php">Edit Details</a>
+                    <a class="nav-link active" href="editdetails.php">Edit Details</a>
                   </li>
                 </ul>
                 
@@ -63,7 +63,7 @@ include("dbConfig.php");
             <div class="col-sm-10" style="background-color:orange;">
               <p>Here is Dashboard.</p>
                 
-                <div class="title">View Profile</div>
+                <div class="title">Edit Profile</div>
                     <div class="container row">
                         <div class="col-sm-3">
                             <img src="pic/<?php// print $result['pic']; ?>" alt="<?php //echo ucfirst($result['firstName'])." ".ucfirst($result['lastName'])." Image"; ?>">
@@ -77,15 +77,21 @@ include("dbConfig.php");
                             <hr>
                             <div class="label">Id</div>
                             <div class="details"><?php //echo $result['id']; ?></div>
+                            <input type="text" class="form-control" id="pwd" autofocus ="autofocus" >
                             <hr>
                             <div class="label">Username</div>
                             <div class="details"><?php// echo ucfirst($result['username']); ?></div>
+                            <input type="text" class="form-control" id="pwd"  >
                             <hr>
                             <div class="label">Mobile</div>
                             <div class="details"><?php// echo $result['mobile']; ?></div>
+                            <input type="text" class="form-control" id="pwd"  >
                             <hr>
                             <div class="label">Email</div>
                             <div class="details"><?php// echo ucfirst($result['email']); ?></div>
+                            <input type="text" class="form-control" id="pwd"  >
+                            <hr>
+                            <button type="button" class="btn btn-accept ">Submit</button>
                             <hr>
                             </div>
                         </div>
@@ -93,20 +99,8 @@ include("dbConfig.php");
             </div>
           </div>
         </div>
-            
-        <div class="container">
-        <div class="jumbotron container row" >
-            <div class="container col-md-6" style="background-color:orange;">
-            This Tab for the Faculty List.
-            </div>
-            
-            <div class="container col-md-6" style="background-color:yellow;">
-            This Tab for the Student List (Will be Blank for Comp Library Admin).
-            </div>
-            
-        </div>
-            </div>
-	        <!-- Footer -->
+
+        <!-- Footer -->
 	        <div class="container jumbotron bg-primary">
 
 						Shree Rayeshwar Institute of Engineering & IT library

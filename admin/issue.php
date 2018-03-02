@@ -37,13 +37,13 @@ include("dbConfig.php");
               
                 <ul class="nav nav-pills">
                   <li class="nav-item">
-                    <a class="nav-link active" href="Home.php">Dashboard</a>
+                    <a class="nav-link " href="Home.php">Dashboard</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="addbook.php">Add/Edit Book</a>
+                    <a class="nav-link " href="addbook.php">Add/Edit Book</a>
                   </li>
                      <li class="nav-item">
-                    <a class="nav-link" href="Issue.php">Issue a Booked Book</a>
+                    <a class="nav-link active" href="Issue.php">Issue a Booked Book</a>
                   </li> 
                     <li class="nav-item">
                     <a class="nav-link" href="addstudent.php">Add/Edit Student</a>
@@ -63,50 +63,28 @@ include("dbConfig.php");
             <div class="col-sm-10" style="background-color:orange;">
               <p>Here is Dashboard.</p>
                 
-                <div class="title">View Profile</div>
+                <div class="title">View List of the Books Booked.</div>
                     <div class="container row">
-                        <div class="col-sm-3">
-                            <img src="pic/<?php// print $result['pic']; ?>" alt="<?php //echo ucfirst($result['firstName'])." ".ucfirst($result['lastName'])." Image"; ?>">
-                            <p>Here comes Image</p>
-                        </div>
-                        <div class="col-sm-9"> 
-                        <div class="userName">
-                            <?php //echo ucfirst($result['firstName'])." ".ucfirst($result['lastName']); ?>
-                        </div>
-                        <div class="info">
+                        <ul>
+                            <li>
+                        <hr>
+                        List item 1, Student, bookname, date, click to scan and confirm booking.
+                            </li>
+                        <li>
                             <hr>
-                            <div class="label">Id</div>
-                            <div class="details"><?php //echo $result['id']; ?></div>
+                        List item 2
+                            </li>
+                        <li>
                             <hr>
-                            <div class="label">Username</div>
-                            <div class="details"><?php// echo ucfirst($result['username']); ?></div>
-                            <hr>
-                            <div class="label">Mobile</div>
-                            <div class="details"><?php// echo $result['mobile']; ?></div>
-                            <hr>
-                            <div class="label">Email</div>
-                            <div class="details"><?php// echo ucfirst($result['email']); ?></div>
-                            <hr>
-                            </div>
-                        </div>
+                        List item 3 
+                        <hr>
+                            </li>
+                        </ul>
                     </div>
             </div>
           </div>
         </div>
-            
-        <div class="container">
-        <div class="jumbotron container row" >
-            <div class="container col-md-6" style="background-color:orange;">
-            This Tab for the Faculty List.
-            </div>
-            
-            <div class="container col-md-6" style="background-color:yellow;">
-            This Tab for the Student List (Will be Blank for Comp Library Admin).
-            </div>
-            
-        </div>
-            </div>
-	        <!-- Footer -->
+        <!-- Footer -->
 	        <div class="container jumbotron bg-primary">
 
 						Shree Rayeshwar Institute of Engineering & IT library

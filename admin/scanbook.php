@@ -24,7 +24,7 @@ include("dbConfig.php");
         <!-- Dashboard-->
 
         <div class="jumbotron container "> 
-            <p> Admin Homepage Section </p>
+            <p> Admin Add/Edit Book Section </p>
         </div>
         
         <div class="container bg-dark text-light">
@@ -57,17 +57,18 @@ include("dbConfig.php");
                   <li class="nav-item">
                     <a class="nav-link " href="editdetails.php">Edit Details</a>
                   </li>
+                    
                 </ul>
                 
             </div>
             <div class="col-sm-10" style="background-color:orange;">
-              <p>Here is Dashboard.</p>
+              <p>Here is List of all Books.</p>
                 
-                <div class="title">View Profile</div>
+                <div class="title">Add New Book</div>
                     <div class="container row">
                         <div class="col-sm-3">
                             <img src="pic/<?php// print $result['pic']; ?>" alt="<?php //echo ucfirst($result['firstName'])." ".ucfirst($result['lastName'])." Image"; ?>">
-                            <p>Here comes Image</p>
+                            <p>Here comes Image of Book.</p>
                         </div>
                         <div class="col-sm-9"> 
                         <div class="userName">
@@ -75,17 +76,18 @@ include("dbConfig.php");
                         </div>
                         <div class="info">
                             <hr>
-                            <div class="label">Id</div>
-                            <div class="details"><?php //echo $result['id']; ?></div>
-                            <hr>
-                            <div class="label">Username</div>
+                            <div class="label">Barcode Scan</div>
                             <div class="details"><?php// echo ucfirst($result['username']); ?></div>
+                            <input type="text" class="form-control" id="pwd" autofocus ="autofocus" >
                             <hr>
-                            <div class="label">Mobile</div>
-                            <div class="details"><?php// echo $result['mobile']; ?></div>
+                            <div class="label">No of Copies</div>
+                            <div class="details"><?php// echo ucfirst($result['username']); ?></div>
+                            <input type="text" class="form-control" id="pwd" value=" show number of book scanned " readonly>
                             <hr>
-                            <div class="label">Email</div>
-                            <div class="details"><?php// echo ucfirst($result['email']); ?></div>
+                            <li class="nav-item">
+                            <button type="button" class="btn btn-accept ">Submit</button>
+                            <button type="button" class="btn btn-accept ">Return to Menu</button>
+                            </li>
                             <hr>
                             </div>
                         </div>
@@ -93,19 +95,6 @@ include("dbConfig.php");
             </div>
           </div>
         </div>
-            
-        <div class="container">
-        <div class="jumbotron container row" >
-            <div class="container col-md-6" style="background-color:orange;">
-            This Tab for the Faculty List.
-            </div>
-            
-            <div class="container col-md-6" style="background-color:yellow;">
-            This Tab for the Student List (Will be Blank for Comp Library Admin).
-            </div>
-            
-        </div>
-            </div>
 	        <!-- Footer -->
 	        <div class="container jumbotron bg-primary">
 

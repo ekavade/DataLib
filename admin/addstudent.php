@@ -37,7 +37,7 @@ include("dbConfig.php");
               
                 <ul class="nav nav-pills">
                   <li class="nav-item">
-                    <a class="nav-link active" href="Home.php">Dashboard</a>
+                    <a class="nav-link " href="Home.php">Dashboard</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="addbook.php">Add/Edit Book</a>
@@ -46,7 +46,7 @@ include("dbConfig.php");
                     <a class="nav-link" href="Issue.php">Issue a Booked Book</a>
                   </li> 
                     <li class="nav-item">
-                    <a class="nav-link" href="addstudent.php">Add/Edit Student</a>
+                    <a class="nav-link active" href="addstudent.php">Add/Edit Student</a>
                   </li> 
                     <li class="nav-item">
                     <a class="nav-link" href="addfaculty.php">Add/Edit Faculty</a>
@@ -63,7 +63,7 @@ include("dbConfig.php");
             <div class="col-sm-10" style="background-color:orange;">
               <p>Here is Dashboard.</p>
                 
-                <div class="title">View Profile</div>
+                <div class="title">Add/edit student Profile</div>
                     <div class="container row">
                         <div class="col-sm-3">
                             <img src="pic/<?php// print $result['pic']; ?>" alt="<?php //echo ucfirst($result['firstName'])." ".ucfirst($result['lastName'])." Image"; ?>">
@@ -77,16 +77,22 @@ include("dbConfig.php");
                             <hr>
                             <div class="label">Id</div>
                             <div class="details"><?php //echo $result['id']; ?></div>
+                            <input type="text" class="form-control" id="pwd"  >
                             <hr>
                             <div class="label">Username</div>
                             <div class="details"><?php// echo ucfirst($result['username']); ?></div>
+                            <input type="text" class="form-control" id="pwd"  >
                             <hr>
                             <div class="label">Mobile</div>
                             <div class="details"><?php// echo $result['mobile']; ?></div>
+                            <input type="text" class="form-control" id="pwd"  >
                             <hr>
                             <div class="label">Email</div>
                             <div class="details"><?php// echo ucfirst($result['email']); ?></div>
+                            <input type="text" class="form-control" id="pwd"  >
                             <hr>
+                            <button type="button" class="btn btn-accept ">Confirm Edit</button>
+                            <button type="button" class="btn btn-accept ">Add New student for registration</button>
                             </div>
                         </div>
                     </div>
